@@ -1,0 +1,27 @@
+{
+  "name": "vue-boilerplate",
+  "version": "1.0.0",
+  "description": "A modern Vue.js boilerplate with Bootstrap and SCSS, by GrantB",
+  "main": "src/main.js",
+  "scripts": {
+    "dev": "npm-run-all --parallel scss:watch vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "scss:watch": "sass --watch src/style.scss:src/assets/styles.css",
+    "vite": "vite"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.6",
+    "vue": "^3.2.0",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.4",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.89.1",
+    "vite": "^6.3.5"
+  },
+  "keywords": [],
+  "author": "GrantB <https://grantb.co.za/>",
+  "license": "MIT"
+}

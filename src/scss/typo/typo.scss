@@ -1,0 +1,63 @@
+// Font size variables
+$h1-size: 80px;
+$h2-size: 60px;
+$h3-size: 28px;
+$h5-size: 10px;
+$p-size: 16px;
+
+// Responsive breakpoints
+$breakpoint-md: 768px;
+$breakpoint-sm: 480px;
+
+h1 {
+  font-size: $h1-size;
+  font-family: $font-family-base;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: $h2-size;
+  font-family: $font-family-base;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: $h3-size;
+  font-family: $font-family-base;
+}
+
+h5 {
+  font-size: $h5-size;
+  font-family: $font-family-base;
+}
+
+p {
+  font-size: $p-size;
+  font-family: $font-family-secondary;
+}
+
+.text_tag {
+  font-size: 10px;
+  color: $muted!important;
+  font-family: $font-family-base;
+  font-weight: 400;
+}
+// Responsive scaling
+@media (max-width: $breakpoint-md) {
+  h1, h2 { font-size: 40px; }
+  h3 { font-size: 22px; }
+}
+
+@media (max-width: $breakpoint-sm) {
+  h1, h2 { font-size: 28px; }
+  h3 { font-size: 16px; }
+  p { font-size: 14px; }
+  h5 { font-size: 8px; }
+}
+
+.font-secondary {
+  font-family: $font-family-secondary;
+}
+.font-primary {
+  font-family: $font-family-base;
+}
